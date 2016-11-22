@@ -1,0 +1,101 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    background-image: url("../img/lauren.png");
+    background-size: 700px;
+    font-weight: 200;
+    height: 100%;
+    background-position: left bottom;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	pointer-events: auto;
+  	position: relative;
+}
+
+.jumbotron {
+	background-color: transparent;
+	border: 2px solid #000;
+	border-radius: none;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #BDECB6;
+	text-decoration:none;
+}
+
+.links {
+	color: #000;	
+	font-size: 64px;
+}
+
+a.links:hover {
+	color: #BDECB6;
+	text-decoration: none;
+}
+
+.links:focus{
+	color: none;
+	text-decoration: none;
+}
+
+.links:visited, .links:focus {
+	color: none;
+}
+
+img {
+	width: 100px;
+}
+
+#resume {
+ 	display:none;
+}
+
+#portfolio {
+	display:none;
+}
+
+#personal {
+	display:none;
+}
+
+#contact {
+	display:none;
+}
+
+.disableClick{
+    pointer-events: none;
+}
+
+.clicked {
+	color: #BDECB6;
+}
+
+
+#moves {
+	position: relative;
+}
+
+h3 {
+	display:inline;
+}
+
+h3.media-heading {
+	display:block;
+}
+
+#portfolio img, #personal img, #contact img {
+	width: 100%;
+}
+
+
+#title {
+	margin-right: 15px;
+	z-index: 1000;
+}
+
+.demo {
+	position: relative;
+}
