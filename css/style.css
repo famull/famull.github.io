@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../famull/proxima-light.otf");
+    font-style: normal;
+}
+
 body {
-    font-family: 'Dosis', sans-serif;
+    font-family: "Proxima Nova";
     background-image: url("../img/lauren.png");
     background-size: 500px;
     font-weight: 200;
