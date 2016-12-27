@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Dosis:300,200' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:100' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -27,16 +28,17 @@
       <div class="jumbotron">
         <div class="container">
           <div id = "moves">
-            <a class = "links" href = "#">Resume</a>
+            <br><br><br>
+            <a class = "links" href = "#">RESUME</a>
               <div = id = "resumesublinks">
                 <a href="#">Education</a><br>
                 <a href="#">Experience</a><br>
                 <a href="#">Awards and Volunteer</a><br>
                 <a href="#">Software</a>
               </div><br>
-            <a class = "links" href = "#">Portfolio</a><br>
-            <a class = "links" href = "#">Personal</a><br>
-            <a class = "links" href = "#">Contact</a>
+            <a class = "links" href = "#">PORTFOLIO</a><br>
+            <a class = "links" href = "#">PERSONAL</a><br>
+            <a class = "links" href = "#">CONTACT</a>
           </div>
           <div id = "resume">
             <div>
@@ -220,25 +222,25 @@
         $(".links").not(this).removeAttr("href");
         $(".links").not(this).addClass("disableClick");
         $(this).addClass("clicked");
-        $("#moves").animate({'marginLeft': '-=300px'}, "slow");
+        $("#moves").animate({'marginLeft': '-=440px'}, "slow");
         $("#moves").height(0);
         $('body').css('background-image','none'); 
 
         var selected = $(this).text();
-        if (selected == 'Resume') {
+        if (selected == 'RESUME') {
           $('#resume').fadeIn(800).show(0) 
           $('#resumesublinks').fadeIn(1400).show(0)
         }
 
-        if (selected == "Personal") {
+        if (selected == "PERSONAL") {
           $('body').css('background-image', 'url("' + laurenfunny + '")'); 
         }
 
-        if (selected == "Portfolio") {
+        if (selected == "PORTFOLIO") {
           $('#portfolio').fadeIn(800).show(0);
         }
 
-        if (selected == "Personal") {
+        if (selected == "PERSONAL") {
           $('#personal').fadeIn(800).show(0);
         }
 
@@ -251,7 +253,7 @@
         $(".links").not(this).fadeTo(1500, 1);
         $(".links").not(this).attr("href", "#");
         $(".links").not(this).removeClass("disableClick");
-        $("#moves").animate({'marginLeft': '+=300px'}, "slow");
+        $("#moves").animate({'marginLeft': '+=440px'}, "slow");
         $(this).removeClass("clicked");
         $("#moves").height(curHeight);
         $('#resume').hide(0);
