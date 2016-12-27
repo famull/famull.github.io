@@ -31,18 +31,18 @@
             <br><br><br>
             <a class = "links" href = "#">RESUME</a>
               <div = id = "resumesublinks">
-                <a href="#">Education</a><br>
-                <a href="#">Experience</a><br>
-                <a href="#">Awards and Volunteer</a><br>
-                <a href="#">Software</a>
+                <a href="#" id ='education'>Education</a><br>
+                <a href="#" id ='experience'>Experience</a><br>
+                <a href="#" id ='awards'>Awards and Volunteer</a><br>
+                <a href="#" id ='software'>Software</a>
               </div><br>
             <a class = "links" href = "#">PORTFOLIO</a><br>
             <a class = "links" href = "#">PERSONAL</a><br>
             <a class = "links" href = "#">CONTACT</a>
           </div>
           <div id = "resume">
-            <div>
-              <!-- Nav tabs -->
+            <img id = "resumeimg" src = "resume-awards.png" width="100%">
+            <!-- <div>
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
                 <li role="presentation"><a href="#experience" aria-controls="experience" role="tab" data-toggle="tab">Experience</a></li>
@@ -50,7 +50,6 @@
                 <li role="presentation"><a href="#software" aria-controls="software" role="tab" data-toggle="tab">Software</a></li>
               </ul>
 
-              <!-- Tab panes -->
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="education"><br> 
                 <h2> 860 approved NCARB IDP hours</h2>
@@ -188,7 +187,7 @@
               </div>
 
             </div>
-            
+             -->
           </div>
           <div id = "portfolio">
             <!-- <a href = "img/portfolio.pdf" target="_blank"><img src = "img/uhh.png" alt = "uhh" width="100%"></a> -->
@@ -265,6 +264,22 @@
         state = 0;
       }
     });
+
+    $("#education").click(function() {
+      $("#resumeimg").attr("src", "resume-education.png")
+    })
+
+    $("#experience").click(function() {
+      $("#resumeimg").attr("src", "resume-experience.png")
+    })
+
+    $("#awards").click(function() {
+      $("#resumeimg").attr("src", "resume-awards.png")
+    })
+
+    $("#software").click(function() {
+      $("#resumeimg").attr("src", "resume-software.png")
+    })
 
     /*$("body").mousemove(function(e ) {
       var mousex = event.clientX;

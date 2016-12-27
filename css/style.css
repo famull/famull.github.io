@@ -16,6 +16,7 @@ body {
 	border: 2px solid #000;
 	border-radius: none;
 	height: 600px;
+	padding: 30px !important;
 }
 
 a {
@@ -47,7 +48,7 @@ a.links:hover {
 }
 
 img {
-	width: 100px;
+	width: 100%	;
 }
 
 #resume {
