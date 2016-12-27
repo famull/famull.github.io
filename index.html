@@ -21,13 +21,20 @@
 <body>
 <div class = "container">
   <div class = "row">
-    <h1 style = "text-align:right" id = "title"><a href = "index.html">Lauren Famularo</a></h1>
-    <div class = "col-md-8 col-sm-offset-4"  id = "main">
+    <div class = "col-md-5 col-sm-offset-6"  id = "main">
+          <h1 style = "text-align:right" id = "title"><a href = "index.html">Lauren Famularo</a></h1>
     <br><br><br>
       <div class="jumbotron">
+
         <div class="container">
           <div id = "moves">
-            <a class = "links" href = "#">Resume</a><br>
+            <a class = "links" href = "#">Resume</a>
+              <div = id = "resumesublinks">
+                <a href="#">Education</a><br>
+                <a href="#">Experience</a><br>
+                <a href="#">Awards and Volunteer</a><br>
+                <a href="#">Software</a>
+              </div><br>
             <a class = "links" href = "#">Portfolio</a><br>
             <a class = "links" href = "#">Personal</a><br>
             <a class = "links" href = "#">Contact</a>
@@ -221,6 +228,7 @@
         var selected = $(this).text();
         if (selected == 'Resume') {
           $('#resume').fadeIn(800).show(0) 
+          $('#resumesublinks').fadeIn(1400).show(0)
         }
 
         if (selected == "Personal") {
@@ -248,6 +256,7 @@
         $(this).removeClass("clicked");
         $("#moves").height(curHeight);
         $('#resume').hide(0);
+        $("#resumesublinks").hide(0)
         $("#portfolio").hide(0);
         $("#personal").hide(0);
         $("#contact").hide(0);
@@ -256,7 +265,7 @@
       }
     });
 
-    $("body").mousemove(function(e ) {
+    /*$("body").mousemove(function(e ) {
       var mousex = event.clientX;
       var mousey = event.clientY;
       $("#moves").css('right', mousex / 80 + "px");
@@ -264,7 +273,7 @@
       //$("#main").css('right', mousex / -180 + "px");
       //$("#main").css('top', mousey / 180 + "px");
       //$(this).css('background-position', mousex / 300 + "px bottom");
-    });
+    });*/
 
     $('.nav-tabs a').click(function (e) {
       e.preventDefault()

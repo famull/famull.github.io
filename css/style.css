@@ -99,3 +99,8 @@ h3.media-heading {
 .demo {
 	position: relative;
 }
+
+#resumesublinks {
+	font-size: 24px;
+	display:none;
+}
