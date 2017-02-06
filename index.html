@@ -219,7 +219,7 @@ style="width:100%; height:525px;" frameborder="0"></iframe>
   var laurenfunny = "img/laurenfunny.png";
     $(".links").click(function() {
       if (state == 0)  {
-        $(".links").not(this).fadeTo(100, 0);
+        $(".links").not(this).hide()
         $(".links").not(this).removeAttr("href");
         $(".links").not(this).addClass("disableClick");
         $(this).addClass("clicked");
