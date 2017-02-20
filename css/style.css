@@ -107,3 +107,32 @@ h3.media-heading {
 	display:none;
 }
 
+#personalimagethumbnails {
+	display:none;
+}
+
+#personalimagethumbnails {
+	display: inline-block;
+	display: none;
+}
+
+#personalimagethumbnails img {
+	width: 75px;
+	box-shadow: 0px 2px 2px #f2f2f2;
+	border: 1px solid #d2d2d2;
+	-webkit-transition: all 0..1s linear;
+    transition: all 0.1s linear;
+  	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    margin: 5px;
+}
+
+
+#personalimagethumbnails img:hover {
+	width: 75px;
+	box-shadow: 0px 3px 3px #d2d2d2;
+	border: 1px solid #BDECB6;
+	-webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+    z-index: 10000;
+}
