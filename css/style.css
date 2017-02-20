@@ -1,10 +1,10 @@
 body {
     font-family: 'Muli', sans-serif;
     background-image: url("../img/lauren.png");
-    background-size: 500px;
+    background-size: 300px;
     font-weight: 200;
     height: 100%;
-    background-position: left bottom;
+    background-position: 100px bottom;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	pointer-events: auto;
