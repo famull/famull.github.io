@@ -62,7 +62,7 @@
           </div>
 
           <div id = "personal">
-            <img id = "personalimg" src = "img/printer_comparison.jpg" alt = "printer_comparison" width="100%"> -->
+            
           </div>
 
           <div id = "contact">
@@ -109,6 +109,8 @@
         }
 
         if (selected == "PERSONAL") {
+          $(".jumbotron").css("background-image", "url('img/printer_comparison.jpg')")
+          $(".jumbotron").css("background-size", "cover")
           $('#personal').fadeIn(800).show(0);
         }
 
@@ -118,6 +120,7 @@
        
         state = 1;
       } else {
+        $(".jumbotron").css("background-image", "none")
         $(".links").not(this).fadeTo(1500, 1);
         $(".links").not(this).attr("href", "#");
         $(".links").not(this).removeClass("disableClick");
@@ -151,11 +154,12 @@
       $("#resumeimg").attr("src", "resume-software.png")
     })
 
-    $("#personalimagethumbnails img").click(function() {
+    $("#personalimagethumbnails img").hover(function() {
       var thumbnail = this.src
-      var bigimage = thumbnail.replace("_thumb", "");
+      var bigimage = "url(" + "'" + thumbnail.replace("_thumb", "") + "'" + ")";
       console.log(bigimage)
-      $("#personalimg").attr("src", bigimage)
+      $(".jumbotron").css("background-image", bigimage)
+      $(".jumbotron").css("background-size", "cover")
     })
 
     /*$("body").mousemove(function(e ) {
