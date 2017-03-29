@@ -110,7 +110,9 @@
 
         if (selected == "PERSONAL") {
           $(".jumbotron").css("background-image", "url('img/printer_comparison.jpg')")
-          $(".jumbotron").css("background-size", "cover")
+          //only applies for printer names will need to fix
+          $(".jumbotron").css("background-size", "90%")
+          $(".jumbotron").css("background-repeat", "no-repeat")
           $('#personal').fadeIn(800).show(0);
         }
 
@@ -158,8 +160,15 @@
       var thumbnail = this.src
       var bigimage = "url(" + "'" + thumbnail.replace("_thumb", "") + "'" + ")";
       console.log(bigimage)
-      $(".jumbotron").css("background-image", bigimage)
-      $(".jumbotron").css("background-size", "cover")
+      //make sure image has print in it otherwise will render incorrectly
+      if (this.src.includes("print")) {
+        $(".jumbotron").css("background-image", bigimage)
+        $(".jumbotron").css("background-size", "90%")
+        $(".jumbotron").css("background-repeat", "no-repeat")
+      } else {
+        $(".jumbotron").css("background-image", bigimage)
+        $(".jumbotron").css("background-size", "cover")
+      }
     })
 
     /*$("body").mousemove(function(e ) {
